@@ -1,0 +1,60 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "苹方", "微软雅黑", "Helvetica";
+}
+.main{
+    width: 1202px;
+    height: 100%;
+    margin: 0 auto;
+    background: url("../img/back2.png") center center no-repeat;
+    background-size:cover;
+}
+.left{
+    width: 1000px;
+    height: 100%;
+    float: left;
+    /*background: #FFE792;*/
+    /*opacity: 0.3;*/
+    position: relative;
+    border: 1px solid #B9F5DB;
+}
+.right{
+    width: 200px;
+    height: 100%;
+    float: left;
+    opacity: 0.9;
+    background: #90D582;
+}
+.title{
+    width: 180px;
+    height: 40px;
+    margin: 30px auto;
+    text-align: center;
+}
+.name{
+    color: #fff;
+    line-height: 36px;
+}
+.con{
+    line-height: 30px;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+.start,.pause{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    margin: 80px 10px 0;
+    border: 0;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.letter{
+
+}

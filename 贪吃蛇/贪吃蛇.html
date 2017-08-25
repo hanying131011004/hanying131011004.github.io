@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+            position: relative;
+            background: url("img/tcsback.jpg");
+        }
+
+        .left {
+            width: 600px;
+            height: 600px;
+            float: left;
+        }
+
+        .right {
+            width: 300px;
+            height: 600px;
+            background: #81B302;
+            float: right;
+            position: relative;
+            opacity: 0.9;
+        }
+
+        .scene {
+            width: 600px;
+            height: 600px;
+            border: 1px solid #ccc;
+            background-size: cover;
+        }
+
+        .show {
+            padding:0 60px;
+            margin: 30px auto;
+        }
+
+        .show .title {
+            height: 30px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            /*background: pink;*/
+        }
+        .show .con {
+            width: 180px;
+            text-align: center;
+            line-height: 30px;
+            background: white;
+            color: red;
+        }
+
+        .btn {
+            width: 180px;
+            height: 30px;
+            background: #fff;
+            color: #333;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            user-select: none;
+            position: absolute;
+            left: 0;
+            right:0;
+            margin: auto;
+            top: 320px;
+        }
+
+        .btnn {
+            width: 180px;
+            height: 30px;
+            background: #fff;
+            color: #333;
+            text-align: center;
+            line-height: 30px;
+            position: absolute;
+            /*margin: 30px auto;*/
+            cursor: pointer;
+            user-select: none;
+            left: 0;right: 0;
+            margin: auto;
+            top: 380px;
+        }
+
+        .block {
+            width: 30px;
+            height: 30px;
+            box-sizing: border-box;
+            /*border: 1px solid #ccc;*/
+            border-radius: 50%;
+            float: left;
+        }
+
+        .snackbody {
+            background: greenyellow;
+
+        }
+
+        .snackhead {
+            background: green;
+        }
+
+        .food {
+            background: blue    ;
+            background-size: cover;
+        }
+
+        .alert {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 200px;
+            height: 120px;
+            background: rgba(149, 149, 149, 0.2);
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            display: none;
+        }
+        .alert span{
+            display: block;
+        }
+        .first{
+            width: 100%;
+            height: 100%;
+            background: url("img/tcs.png");
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            font-size: 50px;
+            border: 1px solid white;
+            text-align: center;
+            line-height: 500px;
+            user-select: none;
+            font-family: "苹方", "微软雅黑", "Helvetica";
+        }
+        #kai{
+            width: 160px;
+            height: 60px;
+            background: rgba(149,149,149,0);
+            color: white;
+            font-size: 20px;
+            line-height: 60px;
+            border-radius: 10px;
+            position: absolute;
+            top: 84%;
+            left: 50px;
+            right: 0;
+            margin: auto;
+            cursor: pointer;
+            border: 0;
+        }
+        .fen{
+            color: red;
+        }
+
+        #btns{
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: yellowgreen;
+            border: 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="left">
+        <div class="scene"></div>
+    </div>
+    <div class="right">
+        <div class="show">
+            <div class="title">得分</div>
+            <div class="con" id="scor">0</div>
+        </div>
+        <div class="show">
+            <div class="title">关卡</div>
+            <div class="con" id="state">1</div>
+        </div>
+        <div class="btn" id="start">
+            开始
+        </div>
+        <div class="btnn">
+            暂停
+        </div>
+    </div>
+    <div class="alert">
+            <span>
+                最终得分
+            </span>
+            <span class="fen">
+                0
+            </span>
+        <input type="button" value="继续游戏" id="btns">
+    </div>
+    <div class="first">
+        贪吃蛇大作战
+    </div>
+    <input type="button" value="" id="kai">
+</div>
+</body>
+<script src="jquery.min.js"></script>
+<script>
+    for (var i = 0; i < 20; i++) {
+        for (var j = 0; j < 20; j++) {
+            $("<div></div>").addClass("block").attr("id", j + "-" + i).appendTo(".scene");
+        };
+    };
+    var snackArr = [{x: 0, y: 0}, {x: 1, y: 0}, {x: 2, y: 0}];
+    var snackHead = snackArr[snackArr.length - 1];
+    function drawSnack() {
+        $(".snackbody").removeClass("snackbody");
+        $(".snackhead").removeClass("snackhead");
+        $.each(snackArr, function (index, value) {
+            $("#" + value.x + "-" + value.y).addClass("snackbody")
+        });
+        $("#" + snackHead.x + "-" + snackHead.y).addClass("snackhead");
+       let scor = $("#scor").html(snackArr.length-3);
+        let num=1;
+        function state() {
+            if(scor%2==0){
+                num++;
+            }
+            return num;
+            $("#stste").html(num);
+        };
+        state();
+    };
+    drawSnack();
+    var dir = "r";
+    function move() {
+        switch (dir) {
+            case "r":
+                snackHead = {x: snackHead.x + 1, y: snackHead.y};
+                break;
+            case "l":
+                snackHead = {x: snackHead.x - 1, y: snackHead.y};
+                break;
+            case "t":
+                snackHead = {x: snackHead.x, y: snackHead.y - 1};
+                break;
+            case "b":
+                snackHead = {x: snackHead.x, y: snackHead.y + 1};
+                break;
+        };
+        var head = $("#" + snackHead.x + "-" + snackHead.y);
+        if (head.hasClass("snackbody") || head.length == 0) {
+            $(".alert").css("display", "block");
+            $(".fen").html(snackArr.length-3);
+            clearInterval(st);
+        };
+        snackArr.push(snackHead);
+        if (head.hasClass("food")) {
+            head.removeClass("food");
+            createFood();
+        } else {
+            snackArr.shift();
+        };
+        drawSnack();
+    };
+    $("#btns").click(function () {
+        $(".alert").css("display", "none");
+        location.reload();
+    });
+    let st;
+    $(".btn").click(function () {
+        st = setInterval(move, 500);
+        console.log(1);
+    });
+    $(".btnn").click(function () {
+        clearInterval(st);
+    });
+    $(document).keydown(function (e) {
+        switch (e.keyCode) {
+            case 65:
+            case 37:
+                dir = "l";
+                break;
+            case 87:
+            case 38:
+                dir = "t";
+                break;
+            case 68:
+            case 39:
+                dir = "r";
+                break;
+            case 83:
+            case 40:
+                dir = "b";
+                break;
+        };
+    });
+    function createFood() {
+        do {
+            var rx = Math.floor(Math.random() * 20);
+            var ry = Math.floor(Math.random() * 20);
+        } while ($("#" + rx + "-" + ry).hasClass("snackbody"));
+        $("#" + rx + "-" + ry).addClass("food");
+    };
+    createFood();
+    $("#kai").click(function () {
+        $(".first").css("display","none");
+        $("#kai").css("display","none");
+    });
+</script>
+</html>

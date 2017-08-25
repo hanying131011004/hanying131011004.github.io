@@ -1,0 +1,464 @@
+/*head*/
+header{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 80px;
+    height: 60px;
+    background: url("../img/logo.png");
+    background-size: 80px 60px;
+    float: left;
+    margin-top: 10px;
+}
+
+.company{
+    float: left;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 20px 0 0 10px;
+}
+
+.ec{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.hright{
+    float: right;
+    padding-top: 20px;
+}
+
+.phone{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: url("../img/phone.png") no-repeat;
+    background-size: 40px 40px;
+    float: left;
+}
+
+.pnum{
+    float: left;
+}
+
+.pnum div:nth-child(1){
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.pnum div:nth-child(2){
+    font-size: 16px;
+    font-weight: bold;
+}
+/*导航*/
+nav{
+    width: 100%;
+    height: 60px;
+    background: #000;
+}
+
+nav ul{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav ul li{
+    float: left;
+    width: 120px;
+    height: 100%;
+}
+
+nav ul li:nth-child(1){
+    background: #EC8521;
+}
+
+nav ul li:hover{
+    background: #EC8521;
+}
+
+nav ul li a{
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 1920px;
+    height: 600px;
+    margin-left: -300px;
+}
+/*关于我们*/
+section{
+    padding-top: 25px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.aboutus{
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.aboutus:after{
+    clear: both;
+    content:"";
+    display: block;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+
+.title span{
+    font-weight: 500;
+}
+
+.title p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 340px;
+    line-height: 24px;
+}
+
+.aboutus>p{
+    margin: 20px auto 0;
+    width: 520px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.enxironment{
+    width: 559px;
+    height: 390px;
+    float: left;
+    position: relative;
+}
+
+.enxironment img{
+    width: 559px;
+    height: 559px;
+    position: absolute;
+    left: 0;bottom: -120px;
+    z-index: 3;
+}
+
+.ctitle{
+    color: rgb(236, 133, 33);
+    font-size: 22px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.controduce{
+    float: right;
+    width: 50%  ;
+    padding: 10px 0 0 0;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.more{
+    width: 150px;
+    height: 40px;
+    background: rgb(255, 87, 0);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+/*案例*/
+.anli{
+    width: 100%;
+    height: 421px;
+    background: url("../img/caseback.jpg");
+    position: relative;
+}
+
+.btitle,.btitle span{
+    color: #fff;
+}
+
+.btitle p{
+    color: #fff;
+}
+
+.anli ul{
+    position: absolute;
+    left: 0;right: 0;
+    margin: auto;
+    bottom: -70px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.anli ul li {
+    width: 285px;
+    height: 270px;
+    background: #F4F4F4;
+}
+
+.anli ul li a{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+
+.caseimgs{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;top: 0;
+    display: none;
+}
+
+.caseimgs:hover{
+    border: 0;
+}
+
+.caseimgs:hover .mask{
+    display: block;
+}
+
+.anli ul li a:nth-child(2){
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ec8521;
+}
+
+.anli ul li a:nth-child(3){
+    font-size: 14px;
+}
+
+.anli ul li a:nth-child(3):hover{
+    color: #00A5C4;
+}
+
+.lmore{
+    margin: 65px auto 0;
+}
+
+/*服务流程*/
+.fuwu{
+    width: 100%;
+    height: 244px;
+    background: rgb(240, 240, 240);
+}
+
+.bbtitle{
+    text-align: left;
+}
+
+.bbtitle span{
+    color: #C3C3C3;
+}
+
+.fuwu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.liucheng{
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.liucheng h4{
+    font-weight: bold;
+    color: rgb(236, 133, 33);
+}
+
+.liucheng p{
+    font-size: 14px;
+    color: rgb(171, 170, 169);
+}
+
+.imgbox{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.one{
+    width: 100px;
+    height: 100px;
+
+}
+
+.two{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;top: 0;
+    display: none;
+}
+
+.jiantou img{
+    width: 40px;
+    height: 14px;
+    margin-top: 40px;
+}
+
+.imgbox:hover .one{
+    display: none;
+}
+
+.imgbox:hover .two{
+    display: block;
+    z-index: 10;
+}
+
+/*新闻中心*/
+.news{
+    background: url("../img/newsback.jpg");
+    padding-bottom: 100px;
+}
+
+.news ul{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.news ul li{
+    float: left;
+    width: 286px;
+    font-size: 12px;
+}
+
+.news ul li a{
+    display: block;
+}
+
+.newsimg{
+    width: 100%;
+    height: 200px;
+}
+
+.newdetail{
+    padding: 0 3px 0 6px;
+    margin-top: 10px;
+}
+
+.newdetail a{
+    padding: 5px 0 0 0;
+    color: #5a5a5a;
+}
+
+.newdetail span{
+    display: block;
+    padding: 10px 0 0 0;
+    color: #929292;
+}
+
+.newdetail p{
+    padding: 5px 0 0 0;
+    color: #666666;
+}
+
+/*底部*/
+footer{
+    width: 100%;
+    background: rgb(67, 67, 67);
+    padding-top: 30px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+footer ul li{
+    width: 121px;
+    height: 31px;
+    text-align: center;
+    line-height: 31px;
+}
+
+footer ul li a{
+    color: #909090;
+}
+
+.contact{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact img{
+    width: 81px;
+    height: 81px;
+    margin-right: 20px;
+}
+
+.add div{
+    font-size: 16px;
+    color: #909090;
+    line-height: 28px;
+}
+
+.di{
+    width: 100%;
+    height: 30px;
+    background: rgb(54, 54, 54);
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #909090;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

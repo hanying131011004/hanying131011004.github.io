@@ -1,0 +1,1424 @@
+.header{
+	width: 100%;
+	height: 40px;
+	background:black;
+}
+
+.header-main{
+	width: 1226px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.header-left{
+	/* width: 574px; */
+	height: 40px;
+	/* background: pink; */
+	line-height: 40px;
+	float: left;
+	overflow: hidden;
+}
+
+.header-left span{
+	border-right: 1px solid #423D39;
+	color: #B0B0B0;
+	font-size: 12px;
+}
+.header-left span a{
+	color: #b0b0b0;
+	padding: 0 6px 0 0;
+}
+
+.header-main span a:hover{
+	color: white;
+}
+
+.header-right{
+	/* width: 274px; */
+	height: 40px;
+	/* background: pink; */
+	line-height: 40px;
+	margin-right: 0px;
+	float: right;
+}
+
+.header-right a{
+	border-right: 1px solid #423D39;
+	color: #B0B0B0;
+	font-size: 12px;
+	padding: 0px 6px;
+}
+
+.daohanggouwuche{
+	width: 120px;
+	height: 40px;
+	background:#424242;
+	float: right;
+	border-right: 0;
+	font-size: 12px;
+	color:  #B0B0B0;
+	background-image: url('../img/gwc1.png');
+}
+
+.daohanggouwuche:hover{
+	background: white;
+	color: red;
+	background-image: url('../img/gwc2.png');
+}
+.daohanggouwuche span{
+	float: right;
+}
+
+/* 导航开始 */
+.daohang{
+	width: 1226px;
+	height: 100px;
+	/* background: gray; */
+	margin: 0 auto;
+}
+
+.logo{
+	width: 55px;
+	height: 55px;
+	background: white;
+	margin-top: 22px;
+	float: left;/* (这里遇到了margin-top的bug问题,如果没有最后的float，那么整个导航栏会下移） */
+}
+
+.daohangyangji{
+	width: 179px;
+	height: 100px;
+	/* background: pink; */
+	float: left;
+	margin-right: 9px;
+}
+
+.daohangwenzi span{
+	line-height: 100px;
+	margin-right: 20px; 
+	float: left;
+	font-size: 1px;
+	color: #543333;
+}
+
+.daohangwenzi span a{
+	color: #333333;
+}
+
+.daohangwenzi span a:hover{
+	color: red;
+}
+
+.daohangsousuo{
+	/* width: 296px; */
+	height: 50px;
+	/* background: pink; */
+	float: right;
+	margin-top: 25px;
+}
+
+.sousuowenzi{
+	width: 245px;
+	height: 50px;
+	float: left;
+	margin-right: 0;
+}
+
+.sousuobiaozhi{
+	width: 50px;
+	height: 50px;
+	float: left;
+	border: 1px solid #000;
+	border-left: 0px; 
+	background-image: url('../img/search.png')
+}
+
+
+/* 导航结束 */
+/* banner开始 */
+.bannertop{
+	width: 1226px;
+	height: 460px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bannerimg{
+	width: 1226px;
+	height: 460px;
+	overflow: hidden;
+}
+
+.bannerimg ul {
+	height: 460px;
+	display: block;
+	overflow: hidden;
+}
+
+.bannerimg ul li {
+	width: 1226px;
+	height: 460px;
+	float: left;
+}
+
+.bannerimg ul li a{
+	display: block;
+	width: 1226px;
+	height: 460px;
+}
+
+.prev,.next{
+	width: 41px;
+	height: 69px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	color: #fff;
+	text-align: center;
+	line-height: 69px;
+	background: #757575;
+	cursor: pointer;
+}
+
+.prev{
+	left: 234px;
+}
+
+.next{
+	right: 0;
+}
+
+.bannerleft{
+	width:234px;
+	height: 420px;
+	/* background: green; */
+	position: absolute;
+	top: 0;bottom: 0;
+	/* margin: auto; */
+	left: 0;
+}
+
+.bannerleft ul{
+	width: 234px;
+	height: 460px;
+	background: black;
+	padding: 20px 0;
+	opacity: 0.6;
+}
+
+.bannerleft ul li{
+	width: 234px;
+	height: 42px;
+	/* background: #14161A; */
+}
+
+.wenzi{
+	float: left;
+	color: white;
+	line-height: 42px;
+	margin-left: 15px;
+	font-size: 14px;
+}
+
+.jiantou{
+	float: right;
+	color: white;
+	line-height: 42px;
+	margin-right: 15px;
+}
+
+.bannerleft ul li:hover{
+	background: orange;
+}
+
+.T13{
+	width: 41px;
+	height: 69px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.bannerbottom{
+	width: 1226px;
+	height: 170px;
+	/* background: orange; */
+	margin: 0 auto;
+	margin-top: 14px;
+	transition: all .8s ease 0.5s;
+}
+
+.bannerbottom1{
+	width: 234px;
+	height: 170px;
+	background: gray;
+	margin-right: 14px;
+	float: left;
+	background-image: url('../img/tuijianback.png');
+}
+
+.bannerbottom11{
+	width: 78px;
+	height: 85px;
+	/* background: pink; */
+	float: left;
+	position: relative;
+}
+
+.bannerbottom11 img{
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 19px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	opacity: 0.5;
+}
+
+.bannerbottom11 span{
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	top: 52px;
+	left: 16px;
+	opacity: 0.5;
+}
+
+.bannerbottom11:hover span,.bannerbottom11:hover img{
+	opacity: 1;
+}
+
+.bannerbottom2{
+	width: 316px;
+	height: 170px;
+	/* background: gray; */
+	float: left;
+	margin-right: 14px;
+}
+
+.bannerbottom3{
+	width: 316px;
+	height: 170px;
+	/* background: gray; */
+	float: left;
+	margin-right: 0px;
+	
+}
+
+.bannerbottom2 :hover,.bannerbottom3 :hover{
+	box-shadow: 0px 13px 30px gray;
+	transition: all 0.8s ease 0.5s;/* (这里的过度加到父元素上没用，加到hover上才出来效果) */
+}
+
+/* banner结束 */
+/* 小米明星单品开始 */
+.mingxingdanpin{
+	width: 1226px;
+	height: 84px;
+	/* background: blue; */
+	margin: 0 auto;
+	position: relative;
+}
+
+.xiaomimingxing{
+	font-size: 22px;
+	position: absolute;
+	top: 44px;
+	position: absolute;
+	float:left;
+}
+
+.mxdpjiantou{
+	position: absolute;
+	top: 51px;
+	right: 0;
+	float: left;
+	height: 24px;
+	/* width: 68px; */
+}
+
+.jtleft{
+	width: 36px;
+	height: 24px;
+	border: 1px solid #E0E0E0;
+	float: left;
+	background-image: url('../img/btnLegt.png');
+	cursor: pointer;
+}
+
+.jtright{
+	width: 36px;
+	height: 24px;
+	border: 1px solid #E0E0E0;
+	float: left;
+	background-image: url('../img/btnRight.png');
+	cursor: pointer;
+}
+
+.jtleft:hover{
+	background-image: url('../img/btnLegt1.png');
+}
+
+.jtright:hover{
+	background-image: url('../img/btnRight1.png');
+}
+
+.danpintupian{
+	width: 1226px;
+	height: 340px;
+	/* background: blue; */
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.danpintu{
+	width: 234px;
+	height: 100%;
+	background: #FAFAFA;
+	margin-right: 14px;
+	float: left;
+	position: relative;
+	border-bottom: 1px solid red;
+	border-top: 1px solid red;
+}
+
+.danpintupian {
+	width: 1226px;
+	height: 340px;
+	overflow: hidden;
+}
+
+.danpintupian ul{
+	width: 2480px;
+	height: 340px;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+.danpintupian ul li{
+	padding-top: 40px;
+	width: 234px;
+	height: 340px;
+	display: block;
+	position: relative;
+	background: #FAFAFA;
+}
+
+.danpintupian ul li:nth-child(1),.danpintupian ul li:nth-child(6){
+	border-top: 1px solid #ffac13;
+}
+
+.danpintupian ul li:nth-child(2),.danpintupian ul li:nth-child(7){
+	border-top: 1px solid #83c44e;
+}
+
+.danpintupian ul li:nth-child(3),.danpintupian ul li:nth-child(8){
+	border-top: 1px solid #2196f3;
+}
+
+.danpintupian ul li:nth-child(4),.danpintupian ul li:nth-child(9){
+	border-top: 1px solid #e53935;
+}
+
+.danpintupian ul li:nth-child(5),.danpintupian ul li:nth-child(10){
+	border-top: 1px solid #00c0a5;
+}
+
+.danpintupian ul li a{
+	display: block;
+}
+
+.danpintupian ul li a img{
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 22px;
+}
+
+.danpintupian ul li a span{
+	color: #212121;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400;
+	display: block;
+}
+
+.danpintupian ul li p{
+	height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+.danpintupian ul li h5{
+	display: block;
+	color: #ff6709;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* 小米明星单品结束 */
+/* 大背景开始 */
+.dabeijing{
+	width: 100%;
+	background: #F5F5F5;
+	margin-top: 41px;
+	overflow: hidden;
+}
+/* 大背景结束 */
+/* 智能硬件开始 */
+.zhinengyingjian{
+	width: 1226px;
+	height: 117px;
+	margin: 0 auto;
+	/* background: pink; */
+	position: relative;
+}
+
+.yingjian{
+	font-size: 22px;
+	position: absolute;
+	top: 77px;
+}
+
+.yingjianright{
+	height: 18px;
+	position: absolute; 
+	/* background: yellow; */
+	top: 80px;
+	right: 0px;
+}
+
+.yingjianright span a{
+	color: black;
+}
+
+.anniu{
+	height: 18px;
+	width: 18px;
+	float: right;
+	background-image: url('../img/more1.png');
+}
+
+.yingjianright:hover span a{
+	color: red;
+}/* (文字不变色的原因？) */
+
+.yingjianright:hover .anniu{
+	background-image: url('../img/more2.png');
+}
+
+.yingjiantu{
+	width: 1226px;
+	height: 614px;
+	/* background: green; */
+	margin: 0 auto;
+}
+
+.yingjiantuleft{
+	width: 234px;
+	height: 614px;
+	/* background: yellow; */
+	margin-right: 14px;
+	float: left;
+	transition: all 0.8s ease;
+}
+
+.yingjiantuleft:hover{
+	box-shadow: 2px 2px 14px gray;
+	transform: translate(0,-10px)
+}
+
+.yingjianturight{
+	width: 978px;
+	height: 614px;
+	/* background: yellow; */
+	float: left;
+}
+
+.yingjianturighttop{
+	width: 978px;
+	height: 300px;
+	/* background: orange; */
+	margin-bottom: 14px;
+}
+
+.yingjianturightbottom{
+	width: 978px;
+	height: 300px;
+	/* background: orange; */
+	margin-bottom: 14px;
+}
+
+.yingjianturighttop1{
+	width: 234px;
+	height: 300px;
+	background: white;
+	float: left;
+	margin-right: 14px;
+	transition: all 0.8s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.T1{
+	width: 150px;
+	height: 150px;
+	position:absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.yingjianturighttop2{
+	width: 234px;
+	height: 300px;
+	background: white;
+	float: left;
+	transition: all 0.8s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.yingjianturighttop1:hover{
+	box-shadow: 2px 2px 14px gray;
+	transform: translate(0,-10px)
+}
+
+.yingjianturighttop2:hover{
+	box-shadow: 2px 2px 14px gray;
+	transform: translate(0,-10px)
+}
+
+.tupianwenzi{
+	color: #2a2e36;
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	top: 203px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.gongneng{
+	color: gray;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+	top: 224px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.jiage{
+	color: red;
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	top: 254px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+/* 智能硬件结束 */
+/* 搭配开始 */
+.dapei{
+	width: 1226px;
+	height: 80px;
+	margin: 0 auto;
+	/* background: pink; */
+	position: relative;
+}
+
+.dapeiwenzi{
+	font-size: 22px;
+	position: absolute;
+	top: 40px;
+}
+
+.dapeiright{
+	height: 21px;
+	/* width: 150px; */
+	/* background: green; */
+	position: absolute; 
+	top: 43px;
+	right: 0;
+	font-size: 16px;
+	color: black;
+}
+
+.dapeiright a{
+	margin-left: 16px;
+}
+
+.dapeiright a:hover{
+	color: red;
+	padding-bottom: 6px;
+	border-bottom: 2px solid red;
+}
+
+.dapeitupian{
+	width: 1226px;
+	height: 614px;
+	/* background: green; */
+	margin: 0 auto;
+}
+
+.dapeitutop{
+	width: 1226px;
+	height: 300px;
+	/* background: orange; */
+	margin-bottom: 14px;
+}
+
+.dapeitubottom{
+	width: 1226px;
+	height: 300px;
+	/* background: orange; */
+}
+
+.T3{
+	width: 234px;
+	height: 300px;
+}
+
+.dapeitubottom1{
+	width: 234px;
+	height: 143px;
+	background: white;
+	float: left;
+	transition: all 0.8s ease;
+	position: relative;
+	margin-bottom: 14px;
+}
+
+.dapeitubottom1:hover{
+	box-shadow: 2px 2px 14px gray;
+	transform: translate(0,-10px)
+}
+
+.yincangbox{
+	width: 234px;
+	height: 75px;
+	/* background: orange; */
+	position: absolute;
+	bottom: -75px;
+}
+
+.yingjianturighttop1:hover .yincangbox{
+	animation: yincangbox 0.8s forwards;
+}
+
+.yingjianturighttop2:hover .yincangbox{
+	animation: yincangbox 0.8s forwards;
+}
+
+.bottomwenzi{
+	color: #2a2e36;
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	top: 45px;
+	left:30px;
+	position: absolute;
+}
+
+.bottomjiage{
+	color: red;
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	left:31px;
+	top: 72px;
+}
+
+.T4{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 25px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.tupianjiage{
+	color: red;
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	top: 228px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.pinglunrenshu{
+	color: gray;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+	top: 257px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+	
+@keyframes yincangbox{
+	0%{
+		opacity: 0;
+		bottom: -75px;
+	}
+	10%{
+		opacity: 0.1;
+		bottom: -67.5px;
+	}
+	20%{
+		opacity: 0.2;
+		bottom: -60px;
+	}
+	30%{
+		opacity: 0.3;
+		bottom: -52.5px;
+	}
+	40%{
+		opacity: 0.4;
+		bottom: -45px;
+	}
+	50%{
+		opacity: 0.5;
+		bottom: -37.5px;
+	}
+	60%{
+		opacity: 0.6;
+		bottom: -30px;
+	}
+	70%{
+		opacity: 0.7;
+		bottom: -22.5px;
+	}
+	80%{
+		opacity: 0.8;
+		bottom: -15px;
+	}
+	90%{
+		opacity: 0.9;
+		bottom: -7.5px;
+	}
+	100%{
+		opacity: 1;
+		bottom: 0px;
+	}
+}
+/* 搭配结束 */
+/* 为你推荐开始 */
+.weinituijiantu{
+	width: 1226px;
+	height: 300px;
+	/* background: green; */
+	margin: 0 auto;
+}
+/* 为你推荐结束 */
+/* 热评产品开始 */
+.repingchanpintu{
+	width: 1226px;
+	height: 415px;
+	/* background: green; */
+	margin: 0 auto;
+}
+
+.repingtu1{
+	width: 296px;
+	height: 415px;
+	background: white;
+	float: left;
+	margin-right: 14px;
+	transition: all 0.8s ease;
+	position: relative; 
+}
+
+.repingtu2{
+	width: 296px;
+	height: 415px;
+	background: white;
+	float: left;
+	transition: all 0.8s ease; 
+	position: relative; 
+}
+
+.T5{
+	width: 296px;
+	height: 220px;
+}
+
+.tupianjieshao{
+	width: 244px;
+	height: 26px;
+	position: absolute;
+	top: 254px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 14px;
+	color: #2a2e36;
+}
+
+.jieshaolaiyuan{
+	/* width: 114px; */
+	height: 17px;
+	color: gray;
+	position: absolute;
+	top: 345px;
+	left: 27px;
+	font-size: 12px;
+}
+
+.chanpinxinghao{
+	width: 244px;
+	height: 26px;
+	position: absolute;
+	top: 373px;
+	left: 27px;
+	font-size: 14px;
+}
+
+.rpcpjg{
+	/* width: 38px; */
+	height: 16px;
+	position: absolute;
+	top: 373px;
+	left: 150px;
+	font-size: 14px;
+	color: red;
+}
+
+.repingchanpintu div:hover{
+	box-shadow: 2px 2px 14px gray;
+	transform: translate(0,-10px)
+}
+
+
+/* 热评产品结束 */
+/* 内容开始 */
+.neirongzhonglei{
+	/* color: orange; */
+	font-size: 16px;
+	text-align: center;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.neirongdaibiaozuo{
+	color: #2a2e36;
+	font-size: 20px;
+	text-align: center;
+	position: absolute;
+	top: 91px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.daibiaozuojieshao{
+	color: gray;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+	top: 122px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.neirongjiage{
+	color: #2a2e36;
+	font-size: 16px;
+	text-align: center;
+	position: absolute;
+	top: 173px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.T6{
+	width: 296px;
+	height: 153px;
+	position: absolute;
+	top: 204px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.bigbox{
+	width: 1240px;
+	height: 415px;
+	margin: 0 auto;
+}
+
+.box{
+	width: 296px;
+	height: 415px;
+	background: white;
+	float: left;
+	margin-right: 14px;
+	overflow: hidden;
+	position: relative;
+}
+
+#c1{
+	border-top: 1px solid #ffac13;
+}
+
+#c2{
+	border-top: 1px solid #83c44e;
+}
+
+#c3{
+	border-top: 1px solid #e53935;
+}
+
+#c4{
+	border-top: 1px solid #2196f3;
+}
+
+.box2{
+	width: 296px;
+	height: 415px;
+	background: white;
+	float: left; 
+	overflow: hidden; 
+	position: relative;
+}
+
+.box ul,.box ul{
+	position: absolute;
+	left: 0;top: 0;
+	overflow: hidden;
+	width: 1200px;
+	transition: all 0.6s;
+}
+
+.box ul li{
+	width: 296px;
+	height: 415px;
+	background: white;
+	position: relative; 
+	margin: 0;
+	float: left;
+}
+
+.dolls {
+	position: absolute;
+	left: 0;right: 0;
+	margin: auto;
+	bottom: 20px;
+	z-index: 10;
+	width: 80px;
+	height: 10px;
+}
+
+.dolls div{
+	width: 10px;
+	height: 10px;
+	background: #b0b0b0;
+	float: left;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.qian{
+	width: 20px;
+	height: 48px;
+	background: black;
+	opacity: 0.3;
+	color: #fff;
+	text-align: center;
+	line-height: 48px;
+	position: absolute;
+	left: 0;
+	top: 0;bottom: 0;
+	margin: auto;
+	cursor: pointer;
+	display: none;
+}
+
+.hou{
+	width: 20px;
+	height: 48px;
+	background: black;
+	opacity: 0.3;
+	color: #fff;
+	text-align: center;
+	line-height: 48px;
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+	right: 0;
+	cursor: pointer;
+	display: none;
+}
+
+.box:hover .hou,.box:hover .qian{
+	display: block;
+	transition: all 0.6s;
+}
+
+.box:hover{
+	box-shadow: 2px 2px 14px gray;
+	transition: all 0.6s;
+	transform: translate(0,-10px);
+}
+/* 内容结束 */
+/* 视频开始 */
+.shipintu{
+	width: 1226px;
+	height: 285px;
+	/* background: green; */
+	margin: 0 auto;
+}
+.shipintu1{
+	width: 296px;
+	height: 285px;
+	background: white;
+	float: left;
+	margin-right: 14px;
+	transition: all 0.8s ease;
+	position: relative; 
+	margin-bottom: 60px;
+}
+
+.shipintu2{
+	width: 296px;
+	height: 285px;
+	background: white;
+	float: left;
+	transition: all 0.8s ease; 
+	position: relative; 
+	margin-bottom: 60px;
+}
+
+.T7{
+	width: 296px;
+	height: 180px;
+	position: absolute;
+	top: 0;
+}
+
+.shipinbiaoti{
+	color: #2a2e36;
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	top: 213px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.shipinneirong{
+	color: gray;
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	top: 238px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.bofang{
+	width: 36px;
+	height: 24px;
+	border: 2px solid white;
+	position: absolute;
+	top: 146px;
+	left: 25px;
+	margin: auto;
+	border-radius: 20px;
+}
+
+.T8{
+	width: 9px;
+	height: 11px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.shipintu1:hover{
+	box-shadow: 2px 2px 14px gray;
+	transform: translate(0,-10px)
+}
+
+.shipintu2:hover{
+	box-shadow: 2px 2px 14px gray;
+	transform: translate(0,-10px)
+}
+
+.bofang:hover{
+	background: orange;
+}
+/* 视频结束 */
+/* 服务栏开始 */
+.fuwu{
+	width: 100%;
+	height:274px;
+	/* background: green; */
+}
+
+.fuwubox1{
+	width: 1226px;
+	height:79px;
+	margin: 0 auto;
+	/* background: pink; */
+	border-bottom:1px solid #BEBEBE
+}
+
+.fuwubox1-1{
+	width: 242px;
+	height:25px;
+	border-right: 1px solid #BEBEBE;
+	margin-top: 27px;
+	float: left;
+	position: relative;
+}
+
+.fuwubox1-2{
+	width: 243px;
+	height:25px;
+	border-right: 1px solid #BEBEBE;
+	margin-top: 27px;
+	float: left;
+	position: relative;
+}
+
+.fuwubox1-3{
+	width: 252px;
+	height:25px;
+	/* border-right: 1px solid #F5F5F5; */
+	margin-top: 27px;
+	float: left;
+	position: relative;
+}
+
+.fuwuxiangmu{
+	text-align: center;
+	left: 87px;
+	color: #2a2e36;
+	position: absolute;
+}
+
+.fuwuxiangmu:hover{
+	color: red;
+}
+
+.fuwubox2{
+	width: 1226px;
+	height:192px;
+	margin: 0 auto;
+	/* background: pink; */
+}
+
+.fuwubox2-1{
+	width: 160px;
+	height: 192px;
+	float: left;
+	background: white;
+	position: relative;
+}
+
+.box21biaoti{
+	font-size: 14px;
+	top: 42px;
+	left: 0;
+	color: black;
+	position: absolute;
+}
+
+.box22neirong{
+	font-size: 12px;
+	top: 86px;
+	left: 0;
+	color: #2a2e36;
+	position: absolute;
+}
+
+.box23neirong{
+	font-size: 12px;
+	top: 114px;
+	left: 0;
+	color: #2a2e36;
+	position: absolute;
+}
+
+.box24neirong{
+	font-size: 12px;
+	top: 141px;
+	left: 0;
+	color: #2a2e36;
+	position: absolute;
+}
+
+.box22neirong:hover{
+	color: red;
+}
+
+.box23neirong:hover{
+	color: red;
+}
+
+.box24neirong:hover{
+	color: red;
+}
+
+.box2-2{
+	width: 252px;
+	height: 112px;
+	float: right;
+	background: white;
+	margin-top: 40px;
+	border-left: 1px solid #BEBEBE;
+	position: relative;
+}
+
+.dianhua{
+	font-size: 16px;
+	color: orange;
+	top: 2px;
+	left: 56px;
+	/* right: 0px;
+	margin: auto; *//* (此处用任何元素水平居中不能实现的原因) */
+	position: absolute;
+}
+
+.shijian{
+	font-size: 12px;
+	color: #2a2e36;
+	top: 30px;
+	left: 64px;
+	position: absolute;
+}
+
+.shoufei{
+	font-size: 12px;
+	color: #2a2e36;
+	top: 50px;
+	left: 87px;
+	position: absolute;
+}
+
+.kefuzaixian{
+	width: 120px;
+	height: 30px;
+	border: 1px solid orange;
+	bottom: 2px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/* background: black; */
+	font-size: 12px;
+	color: orange;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+}
+
+.kefuzaixian:hover{
+	/* background: orange; */
+	color: white;
+}
+/* 服务栏结束 */
+/* 底栏开始 */
+.dilanbeijing{
+	width: 100%;
+	height:166px;
+	background: #FAFAFA;
+}
+
+.dilanmain1{
+	width: 1226px;
+	height: 80px;
+	/* background: pink; */
+	margin: 0 auto;
+	position: relative;
+}
+
+.ddilanlogo{
+	position: absolute;
+	top: 25px;
+	left: 0;
+	width: 55px;
+	height: 55px;
+}
+
+.dilanwenzi{
+	position: absolute;
+	top: 25px;
+	left: 63px;
+	height: 16px;
+}
+
+.dilanwenzi a{
+	color: #2a2e36;
+	font-size: 12px;
+	padding-right: 3px;
+	border-right: 1px solid #2a2e36;
+	margin-left: 2px;
+	/* padding-left: 3px; */
+}
+
+.dilanwenzi a:hover{
+	color: red;
+}
+
+.dilanwenzi1{
+	position: absolute;
+	top: 46px;
+	left: 66px;
+	/* width: 55px; */
+	height: 16px;
+	font-size: 12px;
+}
+
+.dilanwenzi2{
+	position: absolute;
+	top: 62px;
+	left: 66px;
+	/* width: 55px; */
+	height: 16px;
+	font-size: 12px;
+}
+
+.T10{
+	width: 367px;
+	height: 40px;
+	position: absolute;
+	top: 30px;
+	right: 0
+}
+
+.dilanmain2{
+	width: 1226px;
+	height: 75px;
+	/* background: orange; */
+	margin: 0 auto;
+}
+/* 底栏结束 */

@@ -1,0 +1,17 @@
+*/* 通用选择器：选中的是所有的元素 */{
+     margin: 0px;
+     padding: 0px;/* 某些标签存在的默认值 */
+     list-style: none;/* （清除列表的样式） */
+     outline: none;/* 轮廓 input里的 */
+     box-sizing: border-box;/* (不用考虑盒子的大小，边框不用计算在内，它可以自动解析边框) */
+}
+img{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #999;
+}

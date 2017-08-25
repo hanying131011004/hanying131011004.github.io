@@ -1,0 +1,255 @@
+/* banner */
+body{
+	font-family: '微软雅黑','苹方','Roboto',sans-serif;
+}
+.banner{
+	width: 100%;
+	padding: 95px 0;
+	background: url('../img/banner6.jpg');
+	background-size: cover;
+	min-height: 372px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 182px;
+}
+
+
+/* About Me */
+section{
+	padding: 55px 0;
+}
+
+section h3{
+	font-size: 36px;
+	color: #000;
+	text-align: center;
+	font-weight: 500;
+}
+
+.line{
+	width: 65px;
+	height: 3px;
+	background: #56b2e6;
+	margin: 15px auto;
+}
+
+.person{
+	width: 10%;
+	margin: 50px 2	5% 0;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity:0;
+}
+
+.aboutme p{
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+	line-height: 30px;
+	padding: 0 20%;
+	margin-top: 20px;
+	opacity: 0;
+	min-height: 90px;
+}
+#intro2{
+	margin-left: -500px;
+}
+
+#intro1{
+	margin-right: -500px;
+}
+
+@media screen and (max-width: 992px) {
+	.aboutme p{
+		text-align: center;
+		font-size: 14px;
+		color: #000;
+		line-height: 30px;
+		padding: 0 10%;
+		margin-top: 20px;
+	}
+}
+/* My Skill */
+.myskill{
+	background: url('../img/skillsbg.jpg');
+	background-size: cover; 
+}
+
+#titlecolor{
+	color: #fff;
+}
+
+.myskill h4{
+	font-size: 23px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.myskill p{
+	font-size: 14px;
+	color: #d0d0d0;
+	line-height: 27px;
+	margin-top: 20px;
+}
+
+.sk1,.sk2{
+	margin-left: -500px;
+}
+
+.sk3,.sk4{
+	margin-right: -500px;
+}
+/* My Portfolio */
+.potfolio ul{
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 45px;
+}
+
+.potfolio ul li{
+	margin: 0 20px;
+	float: left;
+	font-size: 18px;
+	color: #555;
+	cursor: pointer;
+}
+
+.potfolio ul li:hover,.potfolio ul li:nth-child(1){
+	color: #f58703;
+	text-decoration: underline;
+}
+
+.item{
+	overflow: hidden;
+	position: relative;
+	/*background: #f58703;*/
+	margin-bottom: 30px;
+	height: 233px;
+}
+
+.item a{
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.works{
+	width: 360px;
+	height: 233px;
+	overflow: hidden;
+}
+
+.ycbox span{
+	display: block;
+	padding: 13px 30px;
+	font-size: 14px;
+	border: 1px solid #f58703;
+	border-top: 0;
+	color: #333;
+}
+
+/* contact */
+.contact{
+	background: url('../img/contactbg.jpg');
+	background-size: cover;
+}
+
+.jdt{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.jdt canvas{
+	background: #fff;
+	opacity: 0.8;
+	border-radius: 80px 0 80px 0;
+}
+
+.sk{
+	font-size: 30px;
+	color: #fff;
+	line-height: 230px;
+	text-align: center;
+}
+
+
+
+
+#can4,#can1{
+	border-radius: 0 80px 0 80px ;
+}
+
+.w1{
+	margin-top: 40px;
+}
+
+.w1 h4,.w1 h4 a{
+	margin: 10px 0;
+	font-size: 17px;
+	color: #c7c7c7;
+	text-align: center;
+	font-weight: 500;
+}
+
+.contact form{
+	width: 78%;
+	margin: 30px auto 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-family: inherit;
+}
+
+.contact form input{
+	width: 48%;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px dotted #fff;
+}
+
+.contact form textarea{
+	width: 100%;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px dotted #fff;
+	margin: 20px auto;
+	font-family: inherit;
+}
+
+.contact form input[type='submit']{
+	background: transparent;
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 15%;
+    margin: 0 auto;
+}
+
+.contact form input[type='submit']:hover{
+	border: 1px solid #f58703;
+    color: #f58703;
+}
+
+@media screen and (max-width: 992px){
+	.contact form input[type='submit']{
+		background: transparent;
+	    padding: 8px 10px;
+	    border: 1px solid #fff;
+	    color: #fff;
+	    width: 20%;
+	    margin: 0 auto;
+	}
+}
+
+
+
+
+
+
